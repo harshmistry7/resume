@@ -354,7 +354,7 @@ nav .fas{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(/portf/images/phone-background.png);
+        background-image: url(/resume/pic/phone-background.png);
     }
     .header-text{
         margin-top: 100%;
