@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resume/undercons.css">
+    <script src="https://kit.fontawesome.com/fd9e0662bc.js" crossorigin="anonymous"></script>
+    <title>Under Construction Webpage</title>
+</head>
+<body>
+    <header>
+        <img src="/resume/logo2.png" class="logo">
+        <nav>
+            <ul>
+                <li><a href="\resume\index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <img src="/resume/conspic/curveo.png" class="wave">
+        <div class="contentBx">
+            <h2>Coming Soon..</h2>
+            <p>"Oops! Our website is taking a siesta and enjoying a 
+                makeover. We promise to return with a snazzy new look 
+                and surprises that will make you go 'wow'!"</p>
+            
+            <a href="#" onclick="toggle()";>Notify ME!</a>
+        </div>
+        <div class="imgBx">
+            <img src="/resume/conspic/man.png">
+        </div>
+        <ul class="sci">
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/harshmistry7104"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        </ul>
+    </section>
+    <div class="newsletter">
+        <h2>Stay Tuned</h2>
+        <p>Get notified at launch</p>
+        <div class="inputBox">
+            <form>
+                <input type="email" required="" placeholder="Enter Email Address">
+                <input type="submit" value="Submit">
+            </form>
+            <i class="fa-light fa-xmark" style="color: #000000;" class="close" onclick="toggle();"></i>
+        </div>
+    </div>
+<script type="text/javascript">
+    function toggle(){
+        var newsletter = document.querySelector('.newsletter');
+        newsletter.classList.toggle('active')
+    }
+
+        var countDate=newDate('Jan 1, 2024 00:00:00').getTime();
+
+        function newYear(){
+            var now = new Date().getTime();
+                    gap = countDate - now;
+                    var second = 1000;
+                    var minute = second * 60;
+                    var hour = minute * 60;
+                    var day = hour * 24;
+
+                    var d = Math.floor(gap / (day))
+                    var h = Math.floor((gap % (day)) / (hour));
+                    var m = Math.floor((gap % (hour))/ (minute));
+                    var s = Math.floor((gap % (minute)) / second);
+
+                    document.getElementById('day').innerText=d;
+                    document.getElementById('hour').innerText=h;
+                    document.getElementById('minute').innerText=m;
+                    document.getElementById('second').innerText=s;
+                    
+        }
+        setInterval(function() {
+            newYear();
+        },1000)
+</script>    
+</body>
+</html>
