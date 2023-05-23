@@ -79,6 +79,54 @@ nav ul li a:hover::after {
     color: #ed642b;
 
 }
+/* .wrapper{
+    display: inline-flex;
+}
+.wrapper .static-txt{
+    color:#fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+.wrapper .dynamic-txts{
+    margin-left: 15px;
+    line-height:85px;
+    height: 80px;
+    overflow: hidden;
+}
+.dynamic-txts li{
+    color:#fc6d6d;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top:0;
+    animation: slide 6s steps(3) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -250px;
+    }
+}
+.dynamic-txts li span{
+    position: relative; 
+}
+.dynamic-txts li span::after
+{
+    content: ''; 
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width:100%;
+    background: #080808;
+    border-left:2px solid #fc6d6d;
+    animation: typing 2s steps(10) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 0 0 0;
+    }
+} */
 /* -------about------------ */
 #about {
     padding: 80px 0;
@@ -136,7 +184,16 @@ nav ul li a:hover::after {
 .tab-links.active-link::after{
     width: 50% ;
 }
-
+#experience a{
+    font: bold;
+    color: #ff004f;
+    text-decoration: none;
+}
+#experience a:hover{
+    font: bold;
+    color: #ed642b;
+    text-decoration: none;
+}
 .tab-contents ul li {
     list-style: none;
     margin: none;
@@ -331,10 +388,12 @@ form input, form textarea {
     border-radius: 6px;
 }
 form .btn2{
+    background: #080808;
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor:pointer;
+
 }
 .copyright{
     width: 100%;
@@ -347,6 +406,12 @@ form .btn2{
 .copyright i{
     color: #ed642b;
 }
+#msg
+{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
 
 /* -----css for small src----------- */
 nav .fas{
@@ -354,7 +419,7 @@ nav .fas{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(/resume/pic/phone-background.jpg);
+        background-image: url(/portf/images/phone-background.jpg);
     }
     .header-text{
         margin-top: 100%;
@@ -405,5 +470,10 @@ nav .fas{
     .tab-links{
         font-size: 16px;
         margin-right: 20px; 
+    }
+    
+    .contact-left, .contact-right
+    {
+        flex-basis: 100%;
     }
 }
